@@ -1,4 +1,4 @@
-# OrionLibrary
+# Booting CrazyChristianOrion
 ```lua
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Theking-of-exploits-Christian-exploiter/OrionCrazyChristian/refs/heads/main/OrionLibrary')))()
 ```
@@ -219,6 +219,8 @@ Dropdown:Refresh(List<table>,true)
 ```lua
 Dropdown:Set("dropdown option")
 ```
+# Finishing your script (REQUIRED)
+The below function needs to be added at the end of your code.
 # OrionLib:Init
 ```lua
 OrionLib:Init()
