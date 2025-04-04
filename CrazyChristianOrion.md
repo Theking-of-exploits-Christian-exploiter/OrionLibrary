@@ -153,4 +153,74 @@ Tab:AddParagraph("Paragraph","Paragraph Content")
 ```lua
 CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
 ```
-#
+# Tab Addbind
+```lua
+Tab:AddBind({
+	Name = "Bind",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+		print("press")
+	end    
+})
+
+--[[
+Name = <string> - The name of the bind.
+Default = <keycode> - The default value of the bind.
+Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
+Callback = <function> - The function of the bind.
+]]
+```
+# BindSet
+```lua
+Bind:Set(Enum.KeyCode.E)
+```
+# Tab AddTextBox
+```lua
+Tab:AddTextbox({
+	Name = "Textbox",
+	Default = "default box input",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+```
+# Tab Add DropDown
+```lua
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+--[[
+Name = <string> - The name of the dropdown.
+Default = <string> - The default value of the dropdown.
+Options = <table> - The options in the dropdown.
+Callback = <function> - The function of the dropdown.
+]]
+```
+# Dropdown Refresh
+```lua
+Dropdown:Refresh(List<table>,true)
+```
+# Dropdown SetdropdownOption
+```lua
+Dropdown:Set("dropdown option")
+```
+# OrionLib:Init
+```lua
+OrionLib:Init()
+```
+# Wait Soon
