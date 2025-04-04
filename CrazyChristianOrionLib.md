@@ -1,6 +1,6 @@
 # Booting CrazyChristianOrion
 ```lua
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Theking-of-exploits-Christian-exploiter/OrionCrazyChristian/refs/heads/main/OrionLibrary')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Theking-of-exploits-Christian-exploiter/OrionCrazyChristian/refs/heads/main/source')))()
 ```
 # Windows Creation
 ```lua
