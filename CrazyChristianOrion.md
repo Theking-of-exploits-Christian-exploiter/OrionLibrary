@@ -225,4 +225,16 @@ The below function needs to be added at the end of your code.
 ```lua
 OrionLib:Init()
 ```
-# Wait Soon
+# How flags work.
+The flags feature in the ui may be confusing for some people. It serves the purpose of being the ID of an element in the config file, and makes accessing the value of an element anywhere in the code possible. Below in an example of using flags.
+```lua
+Tab1:AddToggle({
+    Name = "Toggle",
+    Default = true,
+    Save = true,
+    Flag = "toggle"
+})
+
+print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
+```
+Flags only work with the toggle, slider, dropdown, bind, and colorpicker.
