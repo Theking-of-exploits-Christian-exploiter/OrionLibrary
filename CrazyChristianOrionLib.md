@@ -239,8 +239,14 @@ print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
 ```
 Flags only work with the toggle, slider, dropdown, bind, and colorpicker.
 # Making your interface work with configs.
-In order to make your interface use the configs function you first need to add the SaveConfig and ConfigFolder arguments to your window function. The explanation of these arguments in above. Then you need to add the Flag and Save values to every toggle, slider, dropdown, bind, and colorpicker you want to include in the config file. The Flag = <string> argument is the ID of an element in the config file. The Save = <bool> argument includes the element in the config file. Config files are made for every game the library is launched in.
+In order to make your interface use the configs function you first need to add the `SaveConfig` and `ConfigFolder` arguments to your window function. The explanation of these arguments in above.
+Then you need to add the `Flag` and `Save` values to every toggle, slider, dropdown, bind, and colorpicker you want to include in the config file.
+The `Flag = <string>` argument is the ID of an element in the config file.
+The `Save = <bool>` argument includes the element in the config file.
+Config files are made for every game the library is launched in.
 # Destroying the Interface
 ```lua
 OrionLib:Destroy()
 ```
+# Remember
+I do not know if this is working cause im not trying it rn if you can try it
